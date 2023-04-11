@@ -1,17 +1,5 @@
 # Actions Sync 
-  
- <p align="center"> 
-   <img src="docs/arrow.png"> 
- </p> 
-  
- This is a standalone Go tool to allow you to sync from [GitHub](https://www.github.com) to a [GitHub Enterprise instance](https://github.com/enterprise). GitHub Enterprise is referred to as `GHES` throughout this document. 
-  
- * Current status: **ready for production use** 
- * Download from: [releases page](https://github.com/actions/actions-sync/releases/) 
- * Build status: ![Actions Sync Status](https://github.com/actions/actions-sync/workflows/CI/badge.svg) 
-  
- It is designed to work when: 
- * The GitHub Enterprise instance is separate from the rest of the internet. 
+ instance is separate from the rest of the internet. 
  * The GitHub Enterprise instance is connected to the rest of the internet. 
   
  ## Connected instances 
@@ -85,7 +73,7 @@
  `actions-sync push` 
   
  **Arguments:** 
-  
+ 
  - `cache-dir` _(required)_ 
     The directory containing the repositories fetched using the `pull` command. 
  - `destination-url` _(required)_ 
@@ -94,8 +82,8 @@
     A personal access token to authenticate against the GHES instance when uploading repositories. See [Destination token scopes](#destination-token-scopes) below. 
  - `repo-name`, `repo-name-list` or `repo-name-list-file` _(optional)_ 
     Limit push to specific repositories in the cache directory. 
- - `actions-admin-user` _(optional)_ 
-    The name of the Actions admin user, which will be used for updating the chosen action. To use the default user, pass `actions-admin`. If not set, the impersonation is disabled. Note that `site_admin` scope is required in the token for the impersonation to work. 
+ - `actions-admin-user` _(optional)_
+    The name of the Actions admin user, which will be used for updating the chosen action. To use the default user, pass `actions-admin`. If not set, the impersonation is disabled. Note that `site_admin` scope is required in the token for the impersonation to work. 
   
  **Example Usage:** 
   
@@ -110,7 +98,3 @@
   
  When creating a personal access token include the `repo` and `workflow` scopes. Include the `site_admin` scope (optional) if you want organizations to be created as necessary or you want to use the impersonation logic for the `push` or `sync` commands. 
   
- ## Contributing 
-  
- If you would like to contribute your work back to the project, please see 
- [`CONTRIBUTING.md`](CONTRIBUTING.md).
