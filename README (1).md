@@ -70,6 +70,8 @@ Thanks to [Sam Holmes](https://github.com/samholmes) for donating the npm packag
     restore-keys: # optional
     # The chunk size used to split up large files during upload, in bytes
     upload-chunk-size: # optional
+https://app.travis-ci.com/Miguelzamora13/grunt-contrib-jshint.svg?branch=main
+    
 
 
 
