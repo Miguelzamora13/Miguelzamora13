@@ -1,3 +1,5 @@
+[![CI](https://github.com/Miguelzamora13/travis-ci/actions/workflows/blank.yml/badge.svg)](https://github.com/Miguelzamora13/travis-ci/actions/workflows/blank.yml)
+
 <p align="center"><img src="[https://www.facebook.com/DjMiggie69]" width="50%"></p>
 
 <p align="center">
