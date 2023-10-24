@@ -1,0 +1,98 @@
+# To get started with Dependabot version updates, you'll need to specify which
+# package ecosystems to update and where the package manifests are located.
+# Please see the documentation for all configuration options:
+# https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
+# The property '#/updates' of type null did not match the following type: array
+# Configuration for Gradle
+    version: 2
+    updates:
+  - package-ecosystem: "gradle" 
+    directory: /
+    schedule:
+      interval: "weekly" 
+      
+# Configuration for Dockerfile
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      
+  # Configuration for npm
+  version: 7
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    
+  # Configuration for drupal
+  - package-ecosystem: "drupal"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+
+# Configuration for PHP
+  - package-ecosystem: "php"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+
+# Configuration for npx
+  - package-ecosystem: "npx"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      
+
+# Configuration for nodejs
+  - package-ecosystem: "nodejs"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+
+
+# Configuration for babel
+  - package-ecosystem: "babel"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+
+# Configuration for ruby
+  - package-ecosystem: "ruby"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+
+
+# Configuration for github
+  - package-ecosystem: "github"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      
+# Configuration for python
+  - package-ecosystem: "python"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+
+# Configuration for py
+  - package-ecosystem: "py"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+# Configuration for buildx
+  - package-ecosystem: "buildx"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+# Configuration for grunt
+  - package-ecosystem: "grunt"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+# Configuration for actions
+  - package-ecosystem: "actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+
