@@ -6,4 +6,4 @@ services:
       - "4000:4000"
     volumes:
       - ".:/app"
-
+echo "{environment_variable_name}={value}" >> "$GITHUB_ENV"
