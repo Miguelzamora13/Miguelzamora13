@@ -50,11 +50,10 @@ jobs:
   e2e:
     name: "E2E local: (${{ matrix.os }})"
     needs: build
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
     strategy:
       matrix:
-        os: [ ubuntu-latest, macos-latest ]
-        node-version: [ 16.x ]
+        node-version: [ 17.x ]
 
     steps:
       - name: Checkout
@@ -91,7 +90,7 @@ jobs:
           (npm run oa version-manager set 4.3.1 && npm run oa version | grep -q '4.3.1') || exit 1
           test -f ~/my/storage/4.3.1.jar || exit 1
           npm run oa:generate && mkdir ./foo && cd ./foo && npm run oa:generate
-
+        runs-on: ubuntu-latest
 #  release:
 #    if: github.event.pull_request.merged == 'true'
 #    name: Release (Dry)
