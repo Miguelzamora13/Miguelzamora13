@@ -24,4 +24,4 @@ workflows:
   say-hello-workflow:
     jobs:
       - say-hello
-
+        echo "{environment_variable_name}={value}" >> "$GITHUB_ENV"
