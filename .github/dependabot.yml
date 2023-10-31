@@ -96,3 +96,12 @@
     schedule:
       interval: "weekly"
 
+
+# Configuration for dependabot
+  - package-ecosystem: "dependabot"
+    version: 2
+    updates:
+  - package-ecosystem: "dependabot" # See documentation for possible values
+    directory: "/" # Location of package manifests
+    schedule:
+      interval: "weekly"
